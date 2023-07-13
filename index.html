@@ -5,10 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto2</title>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body>
 <header>
     <h1>PROYECTO 2</h1>
 </header>
+<main>
+    <label for="nombre" class="form-label">nombre de la mascota 
+        <input type="text" class="form-control" id="nombre" autocomplete="off"/>
+   </label>
+   <label for="raza" class="form-label"> raza 
+    <input type="text" class="form-control" id="raza" autocomplete="off"/>
+</label>
+<label for="servicio" class="form-label">servicio (seleccion multiple) 
+    <input type="text" class="form-control" id="servicio" autocomplete="off"/>
+</label>
+<label for="propietario" class="form-label">nombre del propietario 
+    <input type="text" class="form-control" id="propietario" autocomplete="off"/>
+</label>
+<label for="telefono" class="form-label">telefono
+    <input type="number" class="form-control" id="telefono" autocomplete="off"/>
+</label>
+<label for="fecha" class="form-label">fecha (calendario) 
+    <input type="text" class="form-control" id="fecha" autocomplete="off"/>
+</label>
+<div>
+
+</div>
+
+    <button onclick=" agregarUsuario()">crear</button>
+    <button onclick="mostrarUsuario()">ver</button>
+    <button onclick="eliminar()">eliminar</button>
+    <button onclick="eliminartodo()">eliminar todo</button>
+
+<table class="">
+<thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre de la Mascota</th>
+        <th scope="col">Raza</th>
+        <th scope="col">Servicio</th>
+        <th scope="col">Nombre del Propietario</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Fecha</th>
+    </tr>
+</thead>
+<tbody id="cuerpoTabla"></tbody>
+</table>
+
+</main>
+
+<script src="./js/index.js"></script>
 </body>
 </html>
